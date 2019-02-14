@@ -44,7 +44,7 @@ $whitefy: white;
   background-color: #00718D;
   padding: 15px 40px;
   border: 1px solid #00718D;
-  border-radius: 5px;
+  border-radius: 2px;
   color: white;
   text-decoration: none;
   width: 150px;
@@ -68,6 +68,7 @@ $whitefy: white;
   display: flex;
   justify-content: center;
   flex-direction: row;
+  align-items: center;
 }
 
 .top-bar a {
@@ -90,8 +91,31 @@ $whitefy: white;
   justify-content: center;
 }
 
+input {
+  background-color: #555;
+  color: white;
+  width: 400px;
+  max-height: 40px;
+  border: 1px solid black;
+}
 
+.fake-icon {
+  @include supershittyswampify;
+  display: flex;
+  align-items: center;
+  margin-top: 1px;
+  height: 42px;
+  margin-left: -60px;
+  background-color: #555;
+}
+
+::placeholder {
+  color: white;
+  padding-left: 15px;
+}
 .header-content {
+  min-width: 1100px;
+  margin-right: 5%;
    img {
     padding-right: 20px;
     height: 100px;
@@ -102,6 +126,9 @@ $whitefy: white;
 
 .header-cont-right {
   margin-left: 55px;
+  a {
+    padding: 0 3px;
+  }
 }
 
 .header-actions {
@@ -113,6 +140,7 @@ $whitefy: white;
 
 .bottom-bar {
   @include shittyswampify;
+
 }
 
 .central-banner {
@@ -136,9 +164,13 @@ $whitefy: white;
     padding: 15px 40px;
     color: white;
     text-decoration: none;
-
   }
+}
 
+.shop-button:hover {
+  border: 1px solid black;
+  background-color: #c02;
+  background-color: lighten(red, 15%);
 }
 
 .winter-clearance {
@@ -176,6 +208,7 @@ $whitefy: white;
   height: 282px;
   border: 1px solid green;
   margin-top: 5%;
+
   #stupid-jacket {
     float: left;
     width: 20%;
@@ -187,17 +220,18 @@ $whitefy: white;
     margin-left: 5%;
   }
 
-.garage-right {
+  .garage-right {
   position: absolute;
   display: flex;
   flex-direction: column;
-  // margin-top: 30px;
   margin-left: 35%;
-
-a {
-  @include garagify;
-}
-}
+    a {
+      @include garagify;
+    }
+    a:hover {
+      background-color: darken(#00718D, 10%);
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
