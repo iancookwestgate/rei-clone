@@ -1,0 +1,64 @@
+.top-bar {
+  height: 40px;
+  background-color: #2a2a2a;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; }
+
+.top-bar a {
+  margin-right: 25px;
+  text-decoration: none;
+  color: #cccccc; }
+
+.top-bar a:hover {
+  color: white; }
+
+.header-container {
+  height: 144px;
+  background-color: black;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.header-content {
+  width: 100%; }
+  .header-content img {
+    height: 100px;
+    width: 158px;
+    float: left; }
+
+.header-cont-right {
+  margin-left: 55px; }
+
+.header-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.bottom-bar {
+  border: 1px solid green; }
+
+.bonus-bar {
+  border: 1px solid black;
+  height: 40px; }
+
+.central-banner {
+  height: 520px;
+  border: 1px solid red; }
+
+.winter-clearance {
+  height: 314px;
+  border: 1px solid blue; }
+
+.garage-theme {
+  height: 282px;
+  border: 1px solid green; }
+
+.travel-places {
+  height: 435px;
+  border: 1px solid blue; }
+
+/*# sourceMappingURL=output.css.map */
