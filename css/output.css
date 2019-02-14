@@ -1,3 +1,17 @@
+#hidden-cart {
+  visibility: hidden;
+  color: white;
+  text-decoration: none; }
+  #hidden-cart :hover {
+    color: lightgreen; }
+
+#hidden-menu {
+  visibility: hidden;
+  color: white;
+  text-decoration: none; }
+  #hidden-menu :hover {
+    color: lightgreen; }
+
 .top-bar {
   height: 40px;
   background-color: #2a2a2a;
@@ -23,12 +37,11 @@
   align-items: center;
   justify-content: center; }
 
-.header-content {
-  width: 100%; }
-  .header-content img {
-    height: 100px;
-    width: 158px;
-    float: left; }
+.header-content img {
+  padding-right: 20px;
+  height: 100px;
+  width: 158px;
+  float: left; }
 
 .header-cont-right {
   margin-left: 55px; }
@@ -37,28 +50,106 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+  .header-actions ul a {
+    color: white;
+    text-decoration: none; }
+  .header-actions ul a:hover {
+    color: lightgreen; }
 
-.bottom-bar {
-  border: 1px solid green; }
-
-.bonus-bar {
-  border: 1px solid black;
-  height: 40px; }
+.bottom-bar a {
+  color: white;
+  text-decoration: none; }
+.bottom-bar a:hover {
+  color: lightgreen; }
 
 .central-banner {
+  display: flex;
   height: 520px;
-  border: 1px solid red; }
+  border: 1px solid red;
+  background-color: cornsilk;
+  justify-content: center; }
+  .central-banner .winter-clear {
+    position: absolute;
+    top: 20%; }
+  .central-banner .shop-button {
+    position: absolute;
+    top: 48%;
+    background-color: #c00;
+    padding: 15px 40px;
+    color: white;
+    text-decoration: none; }
 
 .winter-clearance {
   height: 314px;
-  border: 1px solid blue; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%; }
+  .winter-clearance .winter-image-lineup {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .winter-clearance .winter-image-lineup img {
+      max-height: 160px;
+      max-width: 120px;
+      height: 10%;
+      width: 10%;
+      padding-bottom: 30px; }
+  .winter-clearance .sale-crap {
+    display: flex;
+    justify-content: space-around;
+    text-align: center; }
+    .winter-clearance .sale-crap a {
+      color: black;
+      font-weight: bold;
+      text-decoration: none; }
+    .winter-clearance .sale-crap a:hover {
+      text-decoration: underline; }
+    .winter-clearance .sale-crap a {
+      width: 14%; }
 
 .garage-theme {
   height: 282px;
-  border: 1px solid green; }
+  border: 1px solid green;
+  margin-top: 5%; }
+  .garage-theme #stupid-jacket {
+    float: left;
+    width: 20%;
+    max-width: 340px;
+    margin-left: 10%; }
+  .garage-theme #gargage-outlet {
+    margin-top: 1%;
+    margin-left: 5%; }
+  .garage-theme .garage-right {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%; }
+    .garage-theme .garage-right a {
+      background-color: #00718D;
+      padding: 15px 40px;
+      border: 1px solid #00718D;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      width: 150px;
+      text-align: center; }
 
-.travel-places {
-  height: 435px;
-  border: 1px solid blue; }
+@media screen and (max-width: 768px) {
+  ul {
+    display: none; }
+
+  hr {
+    display: none; }
+
+  .bottom-bar {
+    display: none; }
+
+  #hidden-cart {
+    visibility: visible; }
+
+  #hidden-menu {
+    visibility: visible; } }
 
 /*# sourceMappingURL=output.css.map */
