@@ -1,5 +1,9 @@
 $whitefy: white;
 
+html {
+  min-width: 100%;
+}
+
 @mixin swampify {
   ul a {
     color: white;
@@ -54,21 +58,26 @@ $whitefy: white;
 #hidden-cart {
   visibility: hidden;
   @include supershittyswampify;
+  font-size: 30px
 }
 
 #hidden-menu {
   visibility: hidden;
   @include supershittyswampify;
+  font-size: 30px;
 }
 
 .top-bar {
   height: 40px;
+  width: 100%;
   background-color: #2a2a2a;
   border: 1px solid red;
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  font-size: 14px;
+
 }
 
 .top-bar a {
@@ -91,6 +100,10 @@ $whitefy: white;
   justify-content: center;
 }
 
+.garage-theme-mini {
+  visibility: hidden;
+}
+
 input {
   background-color: #555;
   color: white;
@@ -99,23 +112,24 @@ input {
   border: 1px solid black;
 }
 
-.fake-icon {
-  @include supershittyswampify;
-  display: flex;
-  align-items: center;
-  margin-top: 1px;
-  height: 42px;
-  margin-left: -60px;
-  background-color: #555;
-}
+// .fake-icon {
+//   @include supershittyswampify;
+//   display: flex;
+//   align-items: center;
+//   margin-top: 1px;
+//   height: 42px;
+//   margin-left: -60px;
+//   background-color: #555;
+// }
 
 ::placeholder {
   color: white;
   padding-left: 15px;
 }
 .header-content {
-  min-width: 1100px;
-  margin-right: 5%;
+  width: 100%;
+  margin-right: 10%;
+  margin-left: 10%;
    img {
     padding-right: 20px;
     height: 100px;
@@ -140,6 +154,8 @@ input {
 
 .bottom-bar {
   @include shittyswampify;
+  white-space: nowrap;
+ overflow: hidden;
 
 }
 
@@ -150,11 +166,15 @@ input {
   background-color: cornsilk;
   justify-content: center;
 
+  #i-hate-this-photo {
+    width: 100%;
+  }
 
   .winter-clear {
     position: absolute;
     top: 20%;
-
+    max-width: 590px;
+    max-height: 285px;
 
   }
   .shop-button {
@@ -185,8 +205,8 @@ input {
     align-items: center;
     justify-content: space-around;
     img {
-      max-height: 160px;
-      max-width: 120px;
+      // max-height: 160px;
+      // max-width: 120px;
       height: 10%;
       width: 10%;
       padding-bottom: 30px;
@@ -234,7 +254,27 @@ input {
   }
 }
 
-@media screen and (max-width: 768px) {
+.garage-theme-mini {
+  margin-top: 5%;
+  #stupid-jacket2 {
+    width: 75%;
+    height: 75%;
+  }
+  #gargage-outlet2 {
+    margin-top: 1%;
+    margin-left: 5%;
+    width: 100%;
+    height: 100%;
+  }
+  a {
+    @include garagify;
+  }
+  a:hover {
+    background-color: darken(#00718D, 10%);
+  }
+}
+
+@media screen and (max-width: 1000px) {
   ul {
     display: none;
   }
@@ -249,5 +289,67 @@ input {
   }
   #hidden-menu {
     visibility: visible;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .winter-clear {
+    width: 70%;
+    height: 50%;
+  }
+}
+
+
+
+@media screen and (max-width: 775px) {
+  #logo {
+    width: 15%;
+    height: auto;
+    padding: 0;
+  }
+
+  .header-content{
+  display: flex;
+  flex-direction: column;
+  img {
+    margin-left: 7%;
+  }
+    input {
+      padding: 0 45px;
+    }
+
+  }
+
+  .shop-button {
+    width: 80%;
+    text-align: center;
+  }
+
+  .winter-image-lineup img {
+    min-width: 20%;
+    height: auto;
+    flex-flow: row wrap;
+  }
+
+  .garage-theme {
+    display: none;
+  }
+
+  .garage-theme-mini {
+    visibility: visible;
+    text-align: center;
+    #fuck-this-btn {
+      display: block;
+      width: 86%;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .winter-clear {
+    width: 350px;
+    height: 172px;
+    margin-top: 20%;
   }
 }
